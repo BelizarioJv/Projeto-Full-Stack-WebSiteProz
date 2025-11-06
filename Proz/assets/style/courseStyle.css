@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*peguei  as variaveis que utilizei na pagina index */
+:root {
+  --primary-color: #593493;
+  --secondary-color: #202020;
+  --hover-color: #fcaf45;
+  --background-color: #f3f1f5;
+  --input-bg: #f9f9f9;
+  --border-radius: 0.75rem;
+  --transition-speed: 0.3s;
+}
+/* Estilização do corpo da página */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+  height: 100vh;
+}
+/* Estilizando header e a as imagens */
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  padding: 10px 20px;
+}
+
+header img {
+  width: 11.25rem;
+  max-width: 100%;
+}
+
+header .welcome-student {
+  display: flex;
+  margin: 10px;
+}
+
+header .welcome-student img {
+  width: 4.125rem;
+}
+
+header .welcome-student p {
+  margin: 15px;
+  color: white;
+}
+
+header .welcome-student p span {
+  font-weight: bold;
+  color: var(--hover-color);
+}
+
+/* Estilizando conteudo principal */
+.main-content {
+  width: 90%;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: space-evenly;
+  justify-items: center;
+}
+
+.main-content a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.main-content .card-ead {
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 30rem;
+  background-color: #7b5ca8;
+}
+.main-content .card-notes {
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 30rem;
+  background-color: #343fb1;
+}
+
+.main-content .card-financial {
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 30rem;
+  background-color: #179c49;
+}
+.main-content .card-units {
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 30rem;
+  background-color: #f06c00;
+}
+/*Estilizando sessao dos cursos do aluno */
+
+.student-course {
+  height: 30vh;
+  margin: 1rem;
+}
+
+.student-course h2 {
+  color: var(--primary-color);
+  margin: 1rem;
+}
+
+/* Estilizando footer e a as imagens */
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary-color);
+  padding: 10px 20px;
+  position: absolute;
+  bottom: 0;
+}
+
+footer img {
+  width: 11.25rem;
+  max-width: 100%;
+}
+
+/* Responsividade extra */
+@media (max-width: 774px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .welcome-student {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .main-content {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 478px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  header img {
+    width: 9rem;
+  }
+
+  .welcome-student {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+
+  .welcome-student img {
+    width: 3.5rem;
+  }
+
+  .welcome-student p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+  }
+
+  .main-content {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .main-content .card-ead,
+  .main-content .card-notes,
+  .main-content .card-financial,
+  .main-content .card-units {
+    width: 90%;
+    padding: 0.75rem;
+    font-size: 0.95rem;
+  }
+
+  .student-course {
+    height: auto;
+    margin: 1rem;
+  }
+
+  .student-course h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+  }
+
+  footer img {
+    width: 9rem;
+  }
+}

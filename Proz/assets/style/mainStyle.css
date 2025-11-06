@@ -1,0 +1,433 @@
+/*Salvando as cores Principais do Projeto */
+:root {
+  --primary-color: #593493;
+  --secundary-color: #202020;
+  --hover-color: #fcaf45;
+  --background-color: rgba(243, 241, 245, 0.63);
+}
+/*Colocando scroll mais suave */
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+/*Retirando configuraçoes inicais do navegador e colocando fonte principal*/
+* {
+  font-family: "Maven Pro";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*Alinhando tudo de uma vez no body*/
+body {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+/*Estilizando Headee*/
+header {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--background-color);
+  width: 100%;
+  height: 6.25rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header img,
+footer img {
+  width: 9.375rem;
+}
+
+.header-list ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: right;
+}
+
+li {
+  padding: 1.875rem;
+}
+
+a {
+  color: blueviolet;
+  text-decoration: none;
+}
+
+span {
+  font-weight: 900;
+  color: rgb(63, 62, 61);
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 2rem;
+  margin: 1.875rem 0;
+  color: rgb(63, 62, 61);
+}
+
+/*Estilizando sessao de introdução*/
+
+.conteiner-introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  padding: 6.25rem 3.125rem;
+  margin: 1.25rem;
+  box-shadow: 1.25rem 1.25rem 0.625rem 0.625rem grey;
+  border-radius: 1.25rem;
+}
+
+.introduction-content {
+  display: flex;
+  flex-direction: row;
+  gap: 3.125rem;
+}
+
+.introduction-text {
+  font-size: 2rem;
+  margin: 1.25rem;
+}
+
+.card-introduction {
+  width: calc(100% / 3);
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  margin: 20px;
+}
+.card-introduction img {
+  min-width: 100%;
+  object-fit: cover;
+}
+
+.card-introduction p {
+  max-width: 100%;
+  width: 18.75rem;
+  margin: 0.625rem 0;
+}
+
+.card-introduction span {
+  font-weight: 500;
+  color: var(--primary-color);
+  margin: 0 0.625rem;
+}
+
+/*Estilizando banner*/
+
+.banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner img {
+  width: 70%;
+  margin: 6.25rem 0;
+  border-radius: 2.8125rem;
+}
+
+.banner p {
+  position: absolute;
+  top: 12.5rem;
+  font-size: 1rem;
+}
+
+/*Estilizando container principal*/
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4.375rem;
+  width: 60%;
+  margin: 1.875rem 0;
+}
+
+.card-main {
+  margin: 1.25rem;
+  box-shadow: 1.25rem 1.25rem 0.625rem 0.625rem grey;
+  text-align: end;
+  border-radius: 0.625rem;
+  padding: 1.875rem;
+}
+
+.card-main h3 {
+  color: rgb(63, 62, 61);
+}
+
+/*Estilizando sessao de avaliaçao do aluno*/
+
+.reviews-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1.875rem 0;
+}
+
+.reviews-content {
+  color: white;
+  background-color: var(--secundary-color);
+  display: flex;
+  flex-direction: column;
+  width: calc(70% / 3);
+  margin: 0.625rem 1.25rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3.125rem;
+  padding: 1.25rem;
+}
+
+.reviews-content:nth-child(1) {
+  background-color: transparent;
+}
+
+.reviews-content iframe {
+  border-radius: 1.25rem;
+}
+
+.reviews-content:nth-child(2) {
+  width: 32rem;
+  height: 32rem;
+}
+
+.reviews-content:nth-child(2) img {
+  width: 6.25rem;
+  height: 6.25rem;
+  border: 0.1875rem solid var(--primary-color);
+  border-radius: 100%;
+  margin: 1.875rem 0;
+}
+
+.reviews-content:nth-child(2) p {
+  text-decoration: underline;
+  padding: 1.25rem 1.875rem;
+}
+
+.reviews-content:nth-child(2) h2 {
+  color: white;
+}
+
+.reviews-content:nth-child(3) {
+  width: 24.1875rem;
+  height: 24.1875rem;
+}
+
+.reviews-content:nth-child(3) img {
+  width: 4.6875rem;
+  height: 4.6875rem;
+  border-radius: 50%;
+  margin: 0 1.875rem;
+}
+/*Estilizando sessao de qualificaçoes */
+
+.header-content {
+  display: flex;
+}
+
+.qualification-sections {
+  display: flex;
+  background-color: var(--secundary-color);
+  color: white;
+  border-radius: 3.125rem;
+  padding: 3.125rem;
+  align-items: center;
+  margin: 3.125rem 0;
+}
+
+.qualification-sections #text-content {
+  width: 65%;
+  margin: 1.25rem;
+}
+
+#qualificationInput {
+  width: 18.75rem;
+  background-color: var(--secundary-color);
+  border-radius: 1.875rem;
+  padding: 1.25rem;
+  color: white;
+  cursor: pointer;
+}
+#qualificationInput option {
+  cursor: pointer;
+}
+
+.qualification-sections #list-content li {
+  margin: 1.25rem;
+  padding: 0;
+}
+
+.qualification-sections #midia-content {
+  width: 35%;
+  margin: 3.125rem;
+}
+
+.qualification-sections #midia-content img {
+  width: 31.8125rem;
+  height: 31.8125rem;
+  border-radius: 1.25rem;
+}
+
+/*Estilizando sessao de contanto*/
+.contact {
+  width: 70%;
+  margin-top: 12.5rem;
+  display: flex;
+  position: relative;
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 8%,
+    rgba(253, 29, 29, 0.92) 45%,
+    rgba(252, 176, 69, 1) 56%
+  );
+  border-radius: 1.25rem;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0.625rem 1.25rem;
+}
+
+.contact-content p {
+  color: white;
+}
+
+.contact-content button {
+  margin: 0.625rem;
+  padding: 0.625rem;
+  border: 0.0625rem solid var(--primary-color);
+  border-radius: 1.25rem;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.contact-content button:hover {
+  background-color: var(--hover-color);
+  border: 0.0625rem solid var(--hover-color);
+  color: black;
+}
+
+.contact-image {
+  width: 35%;
+  position: absolute;
+  right: 0.625rem;
+  bottom: -0.1875rem;
+}
+
+.contact-image img {
+  width: 20rem;
+}
+
+/*Estilizando footer*/
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin-top: 1.875rem;
+  background-color: var(--background-color);
+}
+
+.social-media {
+  margin: 0.625rem 2.5rem;
+}
+
+.social-media ul {
+  display: flex;
+  list-style: none;
+}
+
+.social-media a {
+  text-decoration: none;
+}
+
+.social-media a:hover {
+  color: var(--hover-color);
+}
+
+/*Media queryes para responsividade */
+
+@media (max-width: 1440px) {
+  .card-introduction {
+    width: 200px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card-introduction {
+    width: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .introduction-content,
+  .main-content,
+  .reviews-section,
+  .qualification-sections {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .conteiner-introduction,
+  .main-content,
+  .contact {
+    width: 90%;
+    padding: 2rem;
+  }
+
+  .card-introduction,
+  .reviews-content,
+  .qualification-sections #text-content,
+  .qualification-sections #midia-content {
+    width: 100%;
+  }
+
+  .banner img {
+    width: 90%;
+  }
+
+  .banner p {
+    position: static;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .contact-content,
+  .contact-image {
+    width: 100%;
+    position: static;
+    text-align: center;
+  }
+
+  .contact-image img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .header-list ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  li {
+    padding: 1rem 0;
+  }
+}

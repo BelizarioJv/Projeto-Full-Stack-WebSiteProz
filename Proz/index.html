@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instituição Proz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="assets/style/mainStyle.css" />
+    <link rel="short-cut icon" href="assets/img/prozLogo.png" />
+  </head>
+  <body>
+    <!--Header-->
+    <header>
+      <img src="assets/img/prozLogo.png" alt="Proz Logo" />
+      <div class="header-list">
+        <ul>
+          <li><a href="#qualificationInput">Cursos</a></li>
+          <li><a href="login.html">Aréa do aluno</a></li>
+        </ul>
+      </div>
+    </header>
+    <!--Seção de introdução com cards-->
+    <section class="conteiner-introduction">
+      <div class="introduction-text">
+        <p>Estude na escola técnica <span>que mais emprega no país</span></p>
+        <p>
+          Escolha seu curso e aprenda com casos e simulações reais,garantindo
+          seu emprego antes mesmodo diploma.
+        </p>
+      </div>
+
+      <div class="introduction-content">
+        <div class="card-introduction">
+          <img src="assets/img/img_bloco2.webp" alt="img-enfermager-proz 1" />
+          <p><span>9 em 10</span>Alunos da Proz são empregados após o curso</p>
+        </div>
+
+        <div class="card-introduction">
+          <img src="assets/img/img_bloco3.webp" alt="img-enfermager-proz 1" />
+          <p>
+            <span>R$ 3.325</span>É o piso salarial para um Técnico em Enfermagem
+          </p>
+        </div>
+
+        <div class="card-introduction">
+          <img src="assets/img/img_bloco1.webp" alt="img-enfermager-proz 1" />
+          <p>
+            <span>100%</span> Dos alunos de Enfermagem garantem o 1° estágio
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--Banner Proz-->
+    <section class="banner">
+      <img src="assets/img/img_provisoria_banner.webp" alt="foto-turma-proz" />
+      <p>A sala de aula que mais parece seu <span>local de trabalho</span></p>
+    </section>
+
+    <!--Seção Principal-->
+    <h2>Como fazemos</h2>
+
+    <main class="main-content">
+      <div class="card-main">
+        <h3>Conexão do estudante com o trabalho</h3>
+        <p>
+          Mais de 80% dos nossos alunos se empregam na área em até um ano após a
+          conclusão do seu curso
+        </p>
+      </div>
+
+      <div class="card-main">
+        <h3>Qualidade do curso</h3>
+        <p>
+          Cursos atualizados com foco no que o mercado mais
+          valoriza.Experimentando sua profissão e resolvendo problemas concretos
+          na pratica.
+        </p>
+      </div>
+
+      <div class="card-main">
+        <h3>Suporte ao aluno</h3>
+        <p>
+          Acompanhamento personalizado durante toda a jornada de aprendizado,
+          com tutores disponíveis para tirar dúvidas e orientar seu
+          desenvolvimento profissional.
+        </p>
+      </div>
+    </main>
+    <!--Seção Avaliação aluno-->
+    <section class="reviews-section">
+      <div class="reviews-content">
+        <iframe
+          autoplay
+          width="387"
+          height="387"
+          src="https://www.youtube.com/embed/i7P6ahGrRtQ?si=npVFf5NRiTAr7w7l"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+      </div>
+
+      <div class="reviews-content">
+        <p>
+          <i
+            >"Sou muito grato a Proz por ter aberto as portas para mim e ter me
+            dado uma oportunidade de estudar"</i
+          >
+        </p>
+        <img src="assets/img/joao.jpg" alt="Foto aluno João" />
+        <p>João Victor Belizrio Dos Santos</p>
+        <h2>Estudante Desenvolvimento de Sistemas</h2>
+      </div>
+
+      <div class="reviews-content">
+        <div class="header-content">
+          <img src="assets/img/joao.jpg" alt="Foto aluno João" />
+          <div>
+            <h3>Joao Victor Belizario Dos Santos</h3>
+            <img
+              src="assets/img/five-star-rating-icon.png"
+              alt="Cinco estrelas" />
+          </div>
+        </div>
+        <div>
+          <p>
+            Infraestrutura maravilhosa, biblioteca, wi-fi , material gratuito e
+            estágios de altíssima qualidade. Fora os funcionários todos
+            humanizados e qualificados para nos atender! Sem duvidas a Proz
+            atende tudo que um aluno que realmente quer aprender precisa!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--Seção Qualificaçoes-->
+    <section class="qualification-sections">
+      <div class="text-content">
+        <h2>
+          Encontre o <span>curso ideal</span>, na unidade mais próxima de você
+        </h2>
+        <p>
+          Todos com aulas práticas, professores de mercado e apoio total pra
+          você conquistar seu lugar no mercado o quanto antes.
+        </p>
+        <br />
+
+        <label for="qualificationInput">Escolha uma Area:</label>
+        <select id="qualificationInput">
+          <option>Selecione uma opção...</option>
+          <option value="enfermagem">Tecnico de Enfermagem</option>
+          <option value="desenvolvimento">
+            Tecnico Desenvolvimento de Sistemas
+          </option>
+        </select>
+
+        <div id="list-content"></div>
+      </div>
+
+      <div id="midia-content"></div>
+    </section>
+
+    <!--Seção Contato Proz-->
+    <section class="contact">
+      <div class="contact-content">
+        <h2>Converse com um orientador agora mesmo</h2>
+        <p>WhatsApp coma atendimento imediato</p>
+        <button>Fale com a gente agora</button>
+      </div>
+      <div class="contact-image">
+        <img src="assets/img/img_cel_nova1.webp" alt="Celular proz" />
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+      <img src="assets/img/prozLogo.png" alt="" />
+      <div class="social-media">
+        <ul>
+          <li>
+            <a href="https://www.instagram.com/prozeducacaobr/">Instagram</a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/school/prozeducacao/posts/?feedView=all"
+              >Linkedin</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="assets/scripts/engine.js" defer></script>
+  </body>
+</html>

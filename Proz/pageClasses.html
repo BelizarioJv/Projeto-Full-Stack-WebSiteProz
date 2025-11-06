@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style/courseStyle.css" />
+    <title>HOME - CURSOS</title>
+  </head>
+  <body>
+    <!-- Cabeçalho da página com logo e avatar com o nome do aluno -->
+    <header>
+      <img src="assets/img/logo-proz-erp-light.svg" alt="logo proz" />
+      <div class="welcome-student">
+        <img
+          src="assets/img/avatar-default.png"
+          alt="imagem ficticia do aluno" />
+        <p>Olá , seja bem-vindo <span id="name-student"></span></p>
+      </div>
+    </header>
+
+    <!-- Conteúdo principal com cartões -->
+    <main class="main-content">
+      <div class="card-ead"><a href="">Ead</a></div>
+      <div class="card-notes"><a href="">Notas e faltas</a></div>
+      <div class="card-financial"><a href="">Financeiro</a></div>
+      <div class="card-units"><a href="">Unidades</a></div>
+    </main>
+
+    <!--Seçao do curso do estudante-->
+    <section class="student-course">
+      <h1>Meus Cursos:</h1>
+      <h2 id="course-student"></h2>
+    </section>
+
+    <!-- footer da página com logo -->
+    <footer>
+      <img src="assets/img/logo-proz-erp-light.svg" alt="logo proz" />
+    </footer>
+
+    <script type="module" src="assets/scripts/dinamicName.js"></script>
+  </body>
+</html>
